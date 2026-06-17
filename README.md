@@ -10,15 +10,15 @@ Le système est une adaptation de l'architecture logicielle Tidybot2, modifiée 
 
 L'algorithme de politique de diffusion s'appuie sur des données multimodales (vision et proprioception):
 
-* 
+
 **Vision :** 3 caméras (caméra embarquée sur le poignet, caméra sur la base, caméra en hauteur).
 
 
-* 
+
 **Proprioception Bras (Kortex API à ~990 Hz) :** Positions, vitesses et couples moteurs des 7 articulations.
 
 
-* 
+
 **Proprioception Base :** Position et orientation cartésiennes.
 
 
