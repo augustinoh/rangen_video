@@ -27,19 +27,19 @@ L'algorithme de politique de diffusion s'appuie sur des données multimodales (v
 
 L'architecture modulaire repose sur ROS2 et des scripts Python communicant via un serveur RPC:
 
-* 
+
 `manette_PS4.py` : Nœud ROS2 gérant les inputs Bluetooth à 10 Hz et publiant sur les topics de contrôle (vitesses cartésiennes, gripper, base).
 
 
-* 
+
 `policies.py` : Script central qui intègre les vitesses pour générer les commandes de position et compile le dictionnaire d'actions.
 
 
-* 
+
 `base_controller.py` : Intègre la bibliothèque **Ruckig** pour générer des trajectoires fluides et optimisées à 250 Hz (4 ms) vers la base AgileX via `/cmd_vel`.
 
 
-* 
+
 `main.py` : Centralise le thread ROS2 pour éviter les conflits liés aux multiples flux de caméras et de capteurs.
 
 
