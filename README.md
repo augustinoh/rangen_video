@@ -49,12 +49,10 @@ L'architecture modulaire repose sur ROS2 et des scripts Python communicant via u
 1. **Collecte de données :** Pilotage intégral du robot (bras, base, et gripper) via la manette PS4 en mode cartésien. La collecte vise entre 50 et 100 démonstrations fluides par tâche (ex: saisir un objet, le déplacer).
 
 
-2. 
-**Entraînement :** Les vecteurs d'observation (images + états des capteurs filtrés) sont passés au modèle RDT-1B / Diffusion Policy pour l'apprentissage des actions.
+2. **Entraînement :** Les vecteurs d'observation (images + états des capteurs filtrés) sont passés au modèle RDT-1B / Diffusion Policy pour l'apprentissage des actions.
 
 
-3. 
-**Exécution Autonome :** Le modèle infère les actions en boucle fermée et transmet les commandes de position au serveur RPC pour exécution par les contrôleurs.
+3. **Exécution Autonome :** Le modèle infère les actions en boucle fermée et transmet les commandes de position au serveur RPC pour exécution par les contrôleurs.
 
 Video de pick and place avec seulement le bras robotique kinova 7 dof
 https://github.com/user-attachments/assets/a0bc388a-f0e7-4a2d-964e-ad181d15c856
